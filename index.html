@@ -86,7 +86,7 @@
 
     </div>
     <br>
-    <img class="summary-img" src="imgs\teaser.png" style="width:100%;">
+    <img class="summary-img" src="imgs/teaser_2.png" style="width:100%;">
 
   </div>
 
@@ -102,7 +102,7 @@
 
 
     <p class="title is-3 mt-5 has-text-centered">Overview</p>
-    <img class="summary-img" src="imgs/pipeline.png" style="width:100%;">
+    <img class="summary-img" src="imgs/pipeline_2.png" style="width:100%;">
     <p class="title is-3 mt-5 has-text-centered"> Visualization Results</p>
 
     
@@ -229,56 +229,118 @@
 
 
 
-          <div class="content has-text-justified">
-            <h3 class="title is-4">Animal transfer</h3>
-            </div>
+            <div class="content has-text-justified">
+              <h3 class="title is-4">Animal Transfer Comparisons</h3>
+              </div>
     
-            <table class="table" style="height:100%;width:100%;">
-              <colgroup>
-                <col span="1" style="width: 25%;">
-                <col span="1" style="width: 25%;">
-                <col span="1" style="width: 25%;">
-                <col span="1" style="width: 25%;">
-              </colgroup>
+              <table class="table" style="height:100%;width:100%;">
+                <colgroup>
+                  <col span="1" style="width: 20%;">
+                  <col span="1" style="width: 20%;">
+                  <col span="1" style="width: 20%;">
+                  <col span="1" style="width: 20%;">
+                  <col span="1" style="width: 20%;">
+                </colgroup>
     
+                <tr>
+                  <th style="text-align: center; vertical-align: middle;">
+                    Reference Video
+                  </th>
+                  <th style="text-align: center; vertical-align: middle;">MotionClone</th>
+                  <th style="text-align: center; vertical-align: middle;">Motion-I2V</th>
+                  <th style="text-align: center; vertical-align: middle;">MOFA-Video</th>
+                  <th style="text-align: center; vertical-align: middle;">Ours</th>
+              </tr>    
+              <tr> 
     
+                <th> <video muted controls autoplay loop> <source src="animal_compare/ref_video_lion.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_compare/lion_motionclone.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_compare/lion_motioni2v.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_compare/lion_mofa.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_compare/ours_lion.mp4" type="video/mp4"> </video> </th>
+              </tr>
+              <tr> 
                 <tr> 
-                  <th> <video muted controls autoplay loop> <source src="animals_transfer/input/103363-662525715.mp4" type="video/mp4"> </video> </th>
-                  <th> <video muted controls autoplay loop> <source src="animals_transfer/input/129992-746164384.mp4" type="video/mp4"> </video> </th>
-                  <th> <video muted controls autoplay loop> <source src="animals_transfer/input/145320-786403437.mp4" type="video/mp4"> </video> </th>
-                  <th> <video muted controls autoplay loop> <source src="animals_transfer/input/154529-807726735.mp4" type="video/mp4"> </video> </th>
+    
+                  <th> <video muted controls autoplay loop> <source src="animal_compare/ref_video_tiger.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="animal_compare/tiger_motionclone.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="animal_compare/tiger_motioni2v.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="animal_compare/tiger_mofa.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="animal_compare/ours_tiger.mp4" type="video/mp4"> </video> </th>
                 </tr>
-                <tr> 
-                  <th>
-                    <a href="">
-                        <img src="animals_transfer/imgs/103363-662525715_small.png">
-                    </a>
-                  </th>
-                  <th>
-                    <a href="">
-                        <img src="animals_transfer/imgs/129992-746164384_small.png">
-                    </a>
-                  </th>
-                  <th>
-                    <a href="">
-                        <img src="animals_transfer/imgs/145320-786403437_small.png">
-                    </a>
-                  </th>
-                  <th>
-                    <a href="">
-                        <img src="animals_transfer/imgs/154529-807726735_small.png">
-                    </a>
-                  </th>
-                </tr>    
-                <tr> 
-                  <th> <video muted controls autoplay loop> <source src="animals_transfer/output/103363-662525715.mp4" type="video/mp4"> </video> </th>
-                  <th> <video muted controls autoplay loop> <source src="animals_transfer/output/129992-746164384.mp4" type="video/mp4"> </video> </th>
-                  <th> <video muted controls autoplay loop> <source src="animals_transfer/output/145320-786403437.mp4" type="video/mp4"> </video> </th>
-                  <th> <video muted controls autoplay loop> <source src="animals_transfer/output/154529-807726735.mp4" type="video/mp4"> </video> </th>
-                </tr>
-            </table>
+                <!-- <tr> 
+    
+                  <th> <video muted controls autoplay loop> <source src="animal_animation/wolf_raw.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="animal_animation/motionclone_tiger_1.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="animal_animation/tiger_motioni2v_1.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="animal_animation/mofa_tiger_1.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="animal_animation/tiger_ours.mp4" type="video/mp4"> </video> </th>
+                </tr> -->
+    
+              </table>   
+    
 
 
+
+
+
+
+
+
+
+
+
+
+
+      <div class="content has-text-justified">
+              <h3 class="title is-4">Animal transfer</h3>
+              </div>
+      
+              <table class="table" style="height:100%;width:100%;">
+                <colgroup>
+                  <col span="1" style="width: 25%;">
+                  <col span="1" style="width: 25%;">
+                  <col span="1" style="width: 25%;">
+                  <col span="1" style="width: 25%;">
+                </colgroup>
+      
+      
+                  <tr> 
+                    <th> <video muted controls autoplay loop> <source src="animals_transfer/input/103363-662525715.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="animals_transfer/input/129992-746164384.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="animals_transfer/input/145320-786403437.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="animals_transfer/input/154529-807726735.mp4" type="video/mp4"> </video> </th>
+                  </tr>
+                  <tr> 
+                    <th>
+                      <a href="">
+                          <img src="animals_transfer/imgs/103363-662525715_small.png">
+                      </a>
+                    </th>
+                    <th>
+                      <a href="">
+                          <img src="animals_transfer/imgs/129992-746164384_small.png">
+                      </a>
+                    </th>
+                    <th>
+                      <a href="">
+                          <img src="animals_transfer/imgs/145320-786403437_small.png">
+                      </a>
+                    </th>
+                    <th>
+                      <a href="">
+                          <img src="animals_transfer/imgs/154529-807726735_small.png">
+                      </a>
+                    </th>
+                  </tr>    
+                  <tr> 
+                    <th> <video muted controls autoplay loop> <source src="animals_transfer/output/103363-662525715.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="animals_transfer/output/129992-746164384.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="animals_transfer/output/145320-786403437.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="animals_transfer/output/154529-807726735.mp4" type="video/mp4"> </video> </th>
+                  </tr>
+              </table>
+  
 
 
 

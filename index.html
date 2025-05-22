@@ -96,7 +96,8 @@
     <!-- abstract -->
     <p class="title is-3 mt-5 has-text-centered"> Abstract </p>
     <p class="content is-size-6 has-text-left">
-      Recent advancements in video generation models have enabled the creation of diverse and novel videos, with promising applications in advertising and film production. However, video concept transfer, which aims to transfer user-defined targets to substitute specified elements in a video, remains a promising yet challenging task. Existing methods typically model video as a holistic entity, leading to limited flexibility and precision when editing only specific regions or concepts. To address these limitations, we propose a novel framework named VCTDiT that introduces both spatial and diffusion timestep decomposition in a progressive mechanism for controllable video concept transfer. To achieve the spatial decomposition, we decouple videos into three key components: the foreground subject, the background, and the motion flow. Building upon this decomposed formulation, we further design a dual-stream to single-stream DiT-based architecture for supporting fine-grained control over different components in the video. We also introduce a self-supervised pretraining strategy based on random masking to enhance the decomposed representation learning from large-scale unlabeled video data. To achieve the timestep decomposition, we revisit the diffusion denoising process and propose a Chain-of-Prompt (CoP) mechanism inspired by the Chain-of-Thought reasoning paradigm. We decompose the denoising process into three stages of different granularity and leverage large language models (LLMS) for stage-specific instructions to guide the generation progressively. We also curate an animal-centric video dataset called OpenAnimal to facilitate the advancement and benchmarking of research in video concept transfer. 
+      Recent advancements in video generation models have enabled the creation of diverse and realistic videos, with promising applications in advertising and film production. However, as one of the essential tasks of video generation models, video concept transfer remains significantly challenging.
+      Existing methods generally model video as an entirety, leading to limited flexibility and precision when solely editing specific regions or concepts. To mitigate this dilemma, we propose a novel architecture UniTransfer, which introduces both spatial and diffusion timestep decomposition in a progressive paradigm, achieving precise and controllable video concept transfer. Specifically, in terms of spatial decomposition, we decouple videos into three key components: the foreground subject, the background, and the motion flow. Building upon this decomposed formulation, we further introduce a dual-to-single-stream DiT-based architecture for supporting fine-grained control over different components in the videos. We also introduce a self-supervised pretraining strategy based on random masking to enhance the decomposed representation learning from large-scale unlabeled video data. Inspired by the Chain-of-Thought reasoning paradigm, we further revisit the denoising diffusion process and propose a Chain-of-Prompt (CoP) mechanism to achieve the timestep decomposition. We decompose the denoising process into three stages of different granularity and leverage large language models (LLMs) for stage-specific instructions to guide the generation progressively. We also curate an animal-centric video dataset called OpenAnimal to facilitate the advancement and benchmarking of research in video concept transfer. 
       Extensive experiments demonstrate that our method achieves high-quality and controllable video concept transfer across diverse reference images and scenes, surpassing existing baselines in both visual fidelity and editability.
     </p>
 
@@ -340,7 +341,66 @@
                     <th> <video muted controls autoplay loop> <source src="animals_transfer/output/154529-807726735.mp4" type="video/mp4"> </video> </th>
                   </tr>
               </table>
+
+              
+
+
+
+              <div class="content has-text-justified">
+                <h3 class="title is-4">OpenAnimal Datasets</h3>
+                </div>
+      
+                <table class="table" style="height:100%;width:100%;">
+                  <colgroup>
+                    <col span="1" style="width: 14%;">
+                    <col span="1" style="width: 14%;">
+                    <col span="1" style="width: 14%;">
+                    <col span="1" style="width: 14%;">
+                    <col span="1" style="width: 14%;">
+                    <col span="1" style="width: 14%;">
+                    <col span="1" style="width: 14%;">
+                  </colgroup>
+      
+                <tr> 
+      
+                  <th> <video muted controls autoplay loop> <source src="open_animals/167489-837077499_small.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="open_animals/168896-839912975_tiny.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="open_animals/173154-848555654_tiny.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="open_animals/178333-859483343_small.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="open_animals/181314-866094614_tiny.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="open_animals/186094-877288141_tiny.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                  <th> <video muted controls autoplay loop> <source src="open_animals/186594-878455881_tiny.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                </tr>
+                <tr> 
+                  <tr> 
+      
+                    <th> <video muted controls autoplay loop> <source src="open_animals/190144-887464241_medium.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="open_animals/192078-891641029_small.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="open_animals/209017_small.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="open_animals/223801_tiny.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="open_animals/239034_tiny.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="open_animals/248835_small.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                    <th> <video muted controls autoplay loop> <source src="open_animals/251833_tiny.mp4_000000.mp4" type="video/mp4"> </video> </th>
+                  </tr>
+
+      
+                </table>   
+      
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
